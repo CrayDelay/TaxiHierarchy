@@ -2,7 +2,7 @@ package Classes;
 import java.util.ArrayList;
 import java.util.Date;
 
-public abstract class Ticket extends Order implements IClientCheck
+public  class Ticket extends Order implements IClientCheck
 {
     private float price_per_km;
     private String Country;
@@ -79,7 +79,7 @@ public abstract class Ticket extends Order implements IClientCheck
 
 
 
-    //@Override
+    @Override
     public double CheckStatus(ArrayList<Client> clients, int index)
     {
 

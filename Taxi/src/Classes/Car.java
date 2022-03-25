@@ -43,6 +43,11 @@ public  class Car
             +"Type:" + type +"\n";
     }
 
+    public final void Drive()
+    {
+        System.out.println("You are going");
+    }
+
 }
 
 
