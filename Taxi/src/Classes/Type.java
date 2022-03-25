@@ -1,15 +1,22 @@
 package Classes;
 
-enum Type
+public enum Type
 {
-    MINIVAN,
-    SEDAN,
-    COUPE,
-    SPORTS_CAR,
-    STATION_WAGON,
-    HATCHBACK,
-    CONVERTIBLE,
-    SPORT_UTILITY_VEHICLE,
-    PICKUP_TRUCK;
+    MINIVAN("Minivan"),
+    SEDAN("Sedan"),
+    COUPE("Coupe"),
+    SPORTS_CAR("Sports Car"),
+    STATION_WAGON("Station Wagon"),
+    HATCHBACK("Hatchback"),
+    CONVERTIBLE("Convertible"),
+    SPORT_UTILITY_VEHICLE("Sports Utility Vehicle"),
+    PICKUP_TRUCK("Pickup Truck");
+
+    public final String label;
+
+    private Type(String label)
+    {
+        this.label=label;
+    }
 
 }

@@ -1,12 +1,13 @@
 package Classes;
 import java.util.Date;
 
-public abstract class Order
+public class Order
 {
     private String point_A;
     private String point_B;
     private Date   OrderTime;
     private boolean Luggage;
+
 
     public Order(){};
 

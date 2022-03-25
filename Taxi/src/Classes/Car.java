@@ -1,17 +1,17 @@
 package Classes;
 
 
-public abstract class Car
+public  class Car
 {
 
     private String carId;
     private String model;
     private Type type;
 
-    public Car(String _carId , String _model,Type type)
+    public Car(String carId , String model,Type type)
     {
-        this.carId = _carId;
-        this.model = _model;
+        this.carId = carId;
+        this.model = model;
         this.type=type;
     }
 
@@ -36,9 +36,12 @@ public abstract class Car
 
 
     public String toString()
-{
-    return "Car ID:" + this.carId +" Model:" + this.model;
-}
+    {
+    return
+            "Car ID:" + carId +"\n"
+            +"Model:" + model +"\n"
+            +"Type:" + type +"\n";
+    }
 
 }
 

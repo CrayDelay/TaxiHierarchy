@@ -19,4 +19,10 @@ public class Company
         return name;
     }
 
+    public String toString()
+    {
+        return
+               "Company name:" + name +"\n";
+    }
+
 }

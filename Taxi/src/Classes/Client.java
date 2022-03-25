@@ -8,6 +8,8 @@ public class Client extends Person
     private boolean Premium;
     private boolean Golden;
 
+    public Client(){};
+
     public Client(int age,String name,String surname,boolean VIP,boolean Premium, boolean Golden )
     {
         super(age, name, surname);
@@ -39,5 +41,6 @@ public class Client extends Person
     public void setVIP(boolean VIP) {
         this.VIP = VIP;
     }
+
 
 }
