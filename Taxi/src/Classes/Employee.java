@@ -2,35 +2,39 @@ package Classes;
 
 import java.util.Date;
 
-public class Employee extends Person
-{
+public class Employee extends Person {
     private Date birthday;
-    private int wage;
+    private double wage;
 
-    public Employee(int age,String name,String surname ,Date birthday,int wage)
-    {
+    public Employee(int age, String name, String surname, Date birthday, double wage) {
         super(age, name, surname);
-        this.birthday=birthday;
-        this.wage=wage;
+        this.birthday = birthday;
+        this.wage = wage;
     }
 
 
-    public Employee(){};
+    public Employee() {
+    }
+
+    ;
 
 
     public Date getBirthday() {
         return birthday;
     }
-    public int getWage() {
+
+    public double getWage() {
         return wage;
     }
+
     public void setBirthday(Date birthday) {
         this.birthday = birthday;
     }
-    public void setWage(int wage) {
-        this.wage = wage;
-    }
 
+    public double setWage(double wage) {
+        this.wage = wage;
+        return this.wage;
+    }
 
 
 }

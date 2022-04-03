@@ -1,6 +1,5 @@
 package Classes;
 
-public final class Director extends Person
-{
+public final class Director extends Person {
 
 }

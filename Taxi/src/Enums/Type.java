@@ -1,7 +1,6 @@
-package Classes;
+package Enums;
 
-public enum Type
-{
+public enum Type {
     MINIVAN("Minivan"),
     SEDAN("Sedan"),
     COUPE("Coupe"),
@@ -14,9 +13,12 @@ public enum Type
 
     public final String label;
 
-    private Type(String label)
-    {
-        this.label=label;
+    private Type(String label) {
+        this.label = label;
+    }
+
+    public String getLabel() {
+        return label;
     }
 
 }

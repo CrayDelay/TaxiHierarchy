@@ -1,37 +1,42 @@
 package Classes;
+
+
 import java.util.Date;
 
-public class Order
-{
-    private String point_A;
-    private String point_B;
-    private Date   OrderTime;
+public class Order extends Company {
+    private String pointA;
+    private String pointB;
+    private Date OrderTime;
     private boolean Luggage;
 
 
-    public Order(){};
-
-    public Order(String point_A,String point_B,Date OrderTime,boolean Luggage)
-    {
-        this.point_A=point_A;
-        this.point_B=point_B;
-        this.OrderTime=OrderTime;
-        this.Luggage=Luggage;
-    }
-    public String getPoint_A() {
-        return point_A;
+    public Order() {
     }
 
-    public void setPoint_A(String point_A) {
-        this.point_A = point_A;
+
+    public Order(String name, String pointA, String pointB, Date OrderTime, boolean Luggage){
+        super(name);
+        this.OrderTime = OrderTime;
+        this.Luggage = Luggage;
+        this.pointA = pointA;
+        this.pointB = pointB;
+
     }
 
-    public void setPoint_B(String point_B) {
-        this.point_B = point_B;
+    public String getPointA() {
+        return pointA;
     }
 
-    public String getPoint_B() {
-        return point_B;
+    public void setPointA(String pointA) {
+        this.pointA = pointA;
+    }
+
+    public void setPointB(String pointB) {
+        this.pointB = pointB;
+    }
+
+    public String getPointB() {
+        return pointB;
     }
 
     public Date getOrderTime() {
